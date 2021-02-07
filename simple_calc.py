@@ -42,26 +42,22 @@ accum_index = 0
 
 def FrameSize():
     return base.winfo_width()//FONT_NUMBER_SIZE
-
 	
     #- Function to update output text
 def Convert():
     string_val.set( sum_val )
-
 	
     #- Function to delete last entry of output text
 def funcDelete():
     global sum_val
     sum_val = sum_val[0:-1]
     Convert()
-
 	
     #- Function for reset output text
 def funcReset():
     global sum_val
     sum_val = ''
     Convert()
-
 	
     #- Function for equal sign: solves expression
 def funcEqual():
@@ -127,7 +123,6 @@ button_equal = tk.Button( box_side, text = '=', command = funcEqual, bg = 'yello
         #Creating frames to that store number buttons
 for index in range( BUTTON_RANGE ):
     box_num.append( tk.Frame(box_pad) )
-
 	
         #Creating number buttons:
 for index in range( NUM_BUTTON ):
@@ -145,7 +140,6 @@ for index in range( NUM_BUTTON ):
         base_box = box_num[2]
        
     buttons.append( tk.Button( base_box, text = str(index), command = funcs[index].ButtonFunc ) )
-
 	
         #Creating operation buttons:
 for index in range( len(SIGNS) ):
