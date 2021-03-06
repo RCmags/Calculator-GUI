@@ -3,4 +3,4 @@ This is a simple calculator GUI made with tkinter that is written in __python 3_
 
 To use the calculator, simply execute "simple_calc.py" with the python shell. If succesful, this should be the output:
 
-<img src = "sample_shot.png" width = "20%" height = "20%">
+<p align = "center"><img src = "sample_shot.png" width = "20%" height = "20%"></p>
